@@ -36,4 +36,6 @@ LearnRails::Application.configure do
     user_name: ENV["GMAIL_USERNAME"]
     password: ENV["GMAIL_PASSWORD"]
   }
+
+  config.action_mailer.perform_deliveries = true
 end
